@@ -1,0 +1,34 @@
+<mat-sidenav-container fullscreen>
+
+  <mat-toolbar color="primary">
+
+    <div class="toolbar-tools">
+
+      <div>
+        <a class="menu-item" mat-button routerLink="/satellites" routerLinkActive="menu-item-active">
+          <span>Satellites</span>
+        </a>
+
+        <a class="menu-item" mat-button routerLink="/equipments" routerLinkActive="menu-item-active">
+          <span>Equipments</span>
+        </a>
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+
+  </mat-toolbar>
+
+  <!-- <messages></messages> -->
+
+  <!-- <loading [detectRoutingOngoing]="true"></loading> -->
+
+  <router-outlet></router-outlet>
+
+</mat-sidenav-container>

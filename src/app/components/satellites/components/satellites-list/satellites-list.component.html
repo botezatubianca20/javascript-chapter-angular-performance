@@ -1,0 +1,8 @@
+<button (click)="editSatellite()">Edit satellite</button>
+
+<div class="cards">
+
+    <app-satellite-card *ngFor="let satellite of satellites" [satellite]="satellite"></app-satellite-card>
+
+
+</div>
