@@ -5,7 +5,7 @@ import { ISatellite } from '../../models/ISatellite';
   selector: 'app-satellite-card',
   templateUrl: './satellite-card.component.html',
   styleUrls: ['./satellite-card.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  // changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SatelliteCardComponent implements OnInit {
 
