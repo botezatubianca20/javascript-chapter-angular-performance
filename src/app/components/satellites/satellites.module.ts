@@ -4,7 +4,7 @@ import { SatellitesListComponent } from './components/satellites-list/satellites
 import { MatCardModule } from "@angular/material/card";
 import { SatellitesRoutingModule } from './satellites-routing.module';
 import { SatelliteCardComponent } from './components/satellite-card/satellite-card.component';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 
@@ -16,7 +16,8 @@ import { SatelliteCardComponent } from './components/satellite-card/satellite-ca
   imports: [
     CommonModule,
     MatCardModule,
-    SatellitesRoutingModule
+    SatellitesRoutingModule,
+    FlexLayoutModule,
   ]
 })
 export class SatellitesModule { }

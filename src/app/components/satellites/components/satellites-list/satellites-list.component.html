@@ -1,8 +1,10 @@
 <button (click)="editSatellite()">Edit satellite</button>
 
-<div class="cards">
+<div fxLayout="row wrap" fxLayoutGap="16px grid">
 
-    <app-satellite-card *ngFor="let satellite of satellites" [satellite]="satellite"></app-satellite-card>
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let satellite of satellites" >
 
+        <app-satellite-card [satellite]="satellite"></app-satellite-card>
 
+    </div>
 </div>

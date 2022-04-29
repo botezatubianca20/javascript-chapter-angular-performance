@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { ISatellite } from '../../models/ISatellite';
 
 @Component({
@@ -10,10 +10,16 @@ import { ISatellite } from '../../models/ISatellite';
 export class SatelliteCardComponent implements OnInit {
 
   @Input() satellite: ISatellite;
+  // public display: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  // ngAfterViewInit() {
+  //   this.display = true;
+  // }
 
   onDescriptionChanged(newDescripton: string) {
     this.satellite.description = newDescripton;
